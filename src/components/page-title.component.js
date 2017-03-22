@@ -8,7 +8,7 @@ export default class PageTitle extends Component {
 					{this.props.title}
 				</div>
 				<div style={this.styles.description}>
-					This is some text about this section
+					{this.props.description}
 				</div>
 			</div>
 		)
