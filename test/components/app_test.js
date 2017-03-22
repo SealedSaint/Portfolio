@@ -1,5 +1,6 @@
 import { renderComponent, expect } from '../test_helper'
 import App from '../../src/components/app.component'
+import { beforeEach, describe, it } from 'mocha'
 
 describe('App', () => {
 	let component
