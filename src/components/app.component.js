@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { Tabs, Tab } from 'material-ui'
 
-import About from './about.component'
+import { About } from './about'
 import AI from './ai.component'
 import Web from './web-dev.component'
 import * as actions from '../actions/index'
@@ -33,20 +33,20 @@ class App extends Component {
 	}
 
     render() {
+		console.log('rendering')
         return (
             <div style={this.styles.app}>
-				<Tabs
-					value={this.props.tabVal}
-					onChange={this.handleTabChange.bind(this)}
-				>
-					<Tab label="About" value="about" />
-					<Tab label="Web" value="web" />
-					<Tab label="AI" value="ai" />
-				</Tabs>
-				<Switch>
-					<Route exact path="/about" component={About} />
-					<Route exact path="/web" component={Web} />
-					<Route exact path="/ai" component={AI} />
+	            <Switch>
+					<Route path="/:tab(about|web|ai)" render={({ match }) => (
+						<Tabs
+							value={match.params.tab}
+							onChange={this.handleTabChange.bind(this)}
+						>
+							<Tab label="About" value="about"> <About /> </Tab>
+							<Tab label="Web" value="web"> <Web /> </Tab>
+							<Tab label="AI" value="ai"> <AI /> </Tab>
+						</Tabs>
+					)} />
 					<Redirect to="/about" />
 				</Switch>
             </div>
@@ -67,4 +67,4 @@ class App extends Component {
     }
 }
 
-export default connect(mapStateToProps, actions)(App)
+export default connect(mapStateToProps, actions, null, { pure: false })(App)

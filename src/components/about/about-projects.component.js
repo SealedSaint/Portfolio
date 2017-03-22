@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { RaisedButton } from 'material-ui'
 
-import * as actions from '../actions'
+import * as actions from '../../actions'
 
 class AboutProjects extends Component {
 	static contextTypes = {
@@ -14,6 +14,14 @@ class AboutProjects extends Component {
 		this.props.changeTab(tabVal)
 	}
 
+	renderProjectButtons() {
+		return ['Web', 'AI'].map(label =>
+			<div key={label} style={this.styles.buttonContainer}>
+				<RaisedButton label={label} primary={true} onTouchTap={() => this.handleButtonTap(label.toLowerCase())} />
+			</div>
+		)
+	}
+
 	render() {
 		return (
 			<div>
@@ -21,12 +29,7 @@ class AboutProjects extends Component {
 					My Projects
 				</div>
 				<div>
-					<div style={this.styles.buttonContainer}>
-						<RaisedButton label="Web" onTouchTap={() => this.handleButtonTap('web')} />
-					</div>
-					<div style={this.styles.buttonContainer}>
-						<RaisedButton label="AI" onTouchTap={() => this.handleButtonTap('ai')} />
-					</div>
+					{this.renderProjectButtons.apply(this)}
 				</div>
 			</div>
 		)
