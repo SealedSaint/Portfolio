@@ -5,10 +5,15 @@ import AboutProjects from './about-projects.component'
 export default class About extends Component {
 	render() {
 		return (
-			<div>
-				About
+			<div style={this.styles.about}>
 				<AboutProjects />
 			</div>
 		)
+	}
+
+	styles = {
+		about: {
+			textAlign: 'center'
+		}
 	}
 }

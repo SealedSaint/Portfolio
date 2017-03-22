@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
+import TabValReducer from './tab-val.reducer'
+
 const RootReducer = combineReducers({
-    state: (state = {}) => state
+	tabVal: TabValReducer
 })
 
 export default RootReducer
