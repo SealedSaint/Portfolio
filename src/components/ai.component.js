@@ -19,7 +19,7 @@ export default class AI extends Component {
 	}
 }
 
-const imageUrlBase = 'src/images'
+const imageUrlBase = 'src/images/project'
 const projects = [
 	{
 		title: 'Lane Line Detection',

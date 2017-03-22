@@ -24,7 +24,7 @@ export default class WebDev extends Component {
 	}
 }
 
-const imageUrlBase = 'src/images'
+const imageUrlBase = 'src/images/project'
 const projects = [
 	{
 		title: 'PunchClock',
