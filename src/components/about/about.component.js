@@ -81,11 +81,12 @@ export class About extends Component {
 		},
 		profilePic: {
 			position: 'absolute',
-			top: 'calc(50% - 127px)',
-			left: 'calc(50% - 127px)',
-			width: '250px',
-			borderRadius: '127px',
-			border: '4px solid white'
+			top: '50%',
+			left: '50%',
+			transform: 'translate(-50%, -50%)',
+			height: '75%',
+			border: '4px solid white',
+			borderRadius: '100%'
 		}
 	})
 }
