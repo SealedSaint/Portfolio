@@ -1,35 +1,40 @@
 import React, { Component } from 'react'
+import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card'
+import { FlatButton } from 'material-ui'
 
 export default class Showcase extends Component {
+	handleGitHubClick(url) {
+		window.location.href = url
+	}
+
+	renderCardActions() {
+		if(!this.props.githubUrl) return
+
+		return (
+			<CardActions>
+				<FlatButton label="GitHub" onTouchTap={() => this.handleGitHubClick(this.props.githubUrl)} />
+			</CardActions>
+		)
+	}
+
 	render() {
 		return (
-			<div style={this.styles.showcase}>
-				<div style={this.styles.title}>
-					{this.props.title}
-				</div>
-				<div>
-					<img style={this.styles.image} src={this.props.imageUrl} />
-				</div>
-				<div style={this.styles.description}>{this.props.description}</div>
-			</div>
+			<Card style={this.styles.card}>
+				<CardMedia>
+					<img src={this.props.imageUrl} />
+				</CardMedia>
+				<CardTitle title={this.props.title} />
+				<CardText>
+					{this.props.children}
+				</CardText>
+				{this.renderCardActions()}
+			</Card>
 		)
 	}
 
 	styles = {
-		showcase: {
-			textAlign: 'center',
-			paddingBottom: '25px'
-		},
-		title: {
-			fontSize: '30px',
-			padding: '10px 0px'
-		},
-		image: {
-			width: '80%'
-		},
-		description: {
-			width: '90%',
-			margin: 'auto'
+		card: {
+			margin: '40px 10%'
 		}
 	}
 }

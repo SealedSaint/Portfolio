@@ -8,7 +8,7 @@ export default class PageTitle extends Component {
 					{this.props.title}
 				</div>
 				<div style={this.styles.description}>
-					{this.props.description}
+					{this.props.children}
 				</div>
 			</div>
 		)

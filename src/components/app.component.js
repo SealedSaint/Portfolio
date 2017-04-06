@@ -33,7 +33,6 @@ class App extends Component {
 	}
 
     render() {
-		console.log('rendering')
         return (
             <div style={this.styles.app}>
 	            <Switch>
