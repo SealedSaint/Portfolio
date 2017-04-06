@@ -18,7 +18,7 @@ export default class WebDev extends Component {
 	render() {
 		return (
 			<div>
-				<PageTitle title={'Web Development'}>
+				<PageTitle title="Web Development">
 					<div>
 						The bulk of my professional career thus far has been web development. Below are some examples
 						of my web dev projects.
@@ -54,7 +54,12 @@ export default class WebDev extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/PunchClock.png`,
-			githubUrl: 'https://github.com/SealedSaint/PunchClock-Desktop'
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/PunchClock-Desktop'
+				}
+			]
 		},
 		{
 			title: 'EventTracker',

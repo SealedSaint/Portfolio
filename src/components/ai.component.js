@@ -17,7 +17,12 @@ export default class AI extends Component {
 	render() {
 		return (
 			<div>
-				<PageTitle title="Artificial Intelligence" />
+				<PageTitle title="Artificial Intelligence">
+					<div>
+						Artificial Intelligence is a new frontier for me. I love the possibilities. Below are some
+						exmaples of my AI projects.
+					</div>
+				</PageTitle>
 				{this.renderProjects()}
 			</div>
 		)
@@ -30,6 +35,34 @@ export default class AI extends Component {
 	}
 
 	projects = [
+		{
+			title: 'Classifying Traffic Signs',
+			description: (
+				<div>
+					<div>
+						This project is about using deep learning, specifically convolutional neural networks, to classify
+						images of German traffic signs. This is an important problem, for being able to classify an image
+						of a traffic sign according to its type will allow a self-driving car to make important decisions.
+					</div>
+					<div style={this.styles.paragraphSpacer} />
+					<div style={{ fontStyle: 'italic' }}>
+						The image above represents the LeNet deep learning architecure. My network is a modified
+						version of LeNet.
+					</div>
+				</div>
+			),
+			imageUrl: `${imageUrlBase}/LeNet.png`,
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/CarND-Term1-P2'
+				},
+				{
+					label: 'Medium',
+					url: 'https://medium.com/@SealedSaint/classifying-traffic-signs-728744d3deac'
+				}
+			]
+		},
 		{
 			title: 'Lane Line Detection',
 			description: (
@@ -52,7 +85,16 @@ export default class AI extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/LaneLineDetection.png`,
-			githubUrl: 'https://github.com/SealedSaint/CarND-Term1-P1'
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/CarND-Term1-P1'
+				},
+				{
+					label: 'Medium',
+					url: 'https://medium.com/@SealedSaint/detecting-lane-lines-udacity-sdcnd-b52bf36193cb'
+				}
+			]
 		},
 		{
 			title: 'Visual Intelligence Test Solver',
@@ -71,7 +113,12 @@ export default class AI extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/RPM-Example.png`,
-			githubUrl: 'https://github.com/SealedSaint/KBAI-Ravens-Project'
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/KBAI-Ravens-Project'
+				}
+			]
 		}
 	]
 }

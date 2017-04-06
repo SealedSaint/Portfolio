@@ -8,11 +8,13 @@ export default class Showcase extends Component {
 	}
 
 	renderCardActions() {
-		if(!this.props.githubUrl) return
+		if(!this.props.links) return
 
 		return (
 			<CardActions>
-				<FlatButton label="GitHub" onTouchTap={() => this.handleGitHubClick(this.props.githubUrl)} />
+				{this.props.links.map(link =>
+					<FlatButton key={link.label} label={link.label} onTouchTap={() => this.handleGitHubClick(link.url)} />
+				)}
 			</CardActions>
 		)
 	}
