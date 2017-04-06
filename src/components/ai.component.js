@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import PageTitle from './page-title.component'
 import Showcase from './showcase.component'
+import globalStyles from './styles'
 
 const imageUrlBase = 'src/images/projects'
 
@@ -18,7 +19,7 @@ export default class AI extends Component {
 		return (
 			<div>
 				<PageTitle title="Artificial Intelligence">
-					<div>
+					<div style={this.styles.textSection}>
 						Artificial Intelligence is a new frontier for me. I love the possibilities. Below are some
 						exmaples of my AI projects.
 					</div>
@@ -28,11 +29,7 @@ export default class AI extends Component {
 		)
 	}
 
-	styles = {
-		paragraphSpacer: {
-			padding: '10px 0px'
-		}
-	}
+	styles = Object.assign({}, globalStyles)
 
 	projects = [
 		{
@@ -61,7 +58,8 @@ export default class AI extends Component {
 					label: 'Medium',
 					url: 'https://medium.com/@SealedSaint/classifying-traffic-signs-728744d3deac'
 				}
-			]
+			],
+			tags: ['Python', 'Tensorflow', 'Numpy', 'OpenCV', 'Matplotlib', 'Floydhub']
 		},
 		{
 			title: 'Lane Line Detection',
@@ -94,7 +92,8 @@ export default class AI extends Component {
 					label: 'Medium',
 					url: 'https://medium.com/@SealedSaint/detecting-lane-lines-udacity-sdcnd-b52bf36193cb'
 				}
-			]
+			],
+			tags: ['Python', 'Numpy', 'OpenCV', 'Matplotlib']
 		},
 		{
 			title: 'Visual Intelligence Test Solver',
@@ -118,7 +117,8 @@ export default class AI extends Component {
 					label: 'GitHub',
 					url: 'https://github.com/SealedSaint/KBAI-Ravens-Project'
 				}
-			]
+			],
+			tags: ['Python', 'Numpy', 'Pillow']
 		}
 	]
 }

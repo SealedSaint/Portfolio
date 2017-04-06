@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import PageTitle from './page-title.component'
 import Showcase from './showcase.component'
+import globalStyles from './styles'
 
 const imageUrlBase = 'src/images/projects'
 
@@ -19,7 +20,7 @@ export default class WebDev extends Component {
 		return (
 			<div>
 				<PageTitle title="Web Development">
-					<div>
+					<div style={this.styles.textSection}>
 						The bulk of my professional career thus far has been web development. Below are some examples
 						of my web dev projects.
 					</div>
@@ -31,13 +32,18 @@ export default class WebDev extends Component {
 		)
 	}
 
-	styles = {
-		paragraphSpacer: {
-			padding: '10px 0px'
-		}
-	}
+	styles = Object.assign({}, globalStyles)
 
 	projects = [
+		{
+			title: 'Right Here',
+			description: (
+				<div>
+					You're looking at it. This site itself is an example of my work!
+				</div>
+			),
+			tags: ['Javascript', 'React', 'Redux', 'HTML', 'CSS']
+		},
 		{
 			title: 'PunchClock',
 			description: (
@@ -59,7 +65,8 @@ export default class WebDev extends Component {
 					label: 'GitHub',
 					url: 'https://github.com/SealedSaint/PunchClock-Desktop'
 				}
-			]
+			],
+			tags: ['Javascript', 'Angular', 'Electron', 'HTML', 'CSS']
 		},
 		{
 			title: 'EventTracker',
@@ -77,7 +84,8 @@ export default class WebDev extends Component {
 					</div>
 				</div>
 			),
-			imageUrl: `${imageUrlBase}/EventTracker Types.png`
+			imageUrl: `${imageUrlBase}/EventTracker Types.png`,
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
 		},
 		{
 			title: 'Liquor Balance',
@@ -104,7 +112,8 @@ export default class WebDev extends Component {
 					</div>
 				</div>
 			),
-			imageUrl: `${imageUrlBase}/Liquor Balance.png`
+			imageUrl: `${imageUrlBase}/Liquor Balance.png`,
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
 		},
 		{
 			title: 'MEL Transfers',
@@ -121,7 +130,8 @@ export default class WebDev extends Component {
 					</div>
 				</div>
 			),
-			imageUrl: `${imageUrlBase}/MEL Transfers.png`
+			imageUrl: `${imageUrlBase}/MEL Transfers.png`,
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
 		},
 		{
 			title: 'Barge Unloads',
@@ -147,7 +157,8 @@ export default class WebDev extends Component {
 					</div>
 				</div>
 			),
-			imageUrl: `${imageUrlBase}/Barge Unloads.png`
+			imageUrl: `${imageUrlBase}/Barge Unloads.png`,
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
 		}
 	]
 }

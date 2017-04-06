@@ -7,6 +7,20 @@ export default class Showcase extends Component {
 		window.location.href = url
 	}
 
+	renderTags() {
+		if(!this.props.tags) return
+
+		return (
+			<div>
+				<div style={{ padding: '10px 0px' }} />
+				<div style={{ fontSize: '12px' }}>
+					{`Built with: ${this.props.tags.join(',  ')}`}
+				</div>
+			</div>
+		)
+
+	}
+
 	renderCardActions() {
 		if(!this.props.links) return
 
@@ -28,6 +42,7 @@ export default class Showcase extends Component {
 				<CardTitle title={this.props.title} />
 				<CardText>
 					{this.props.children}
+					{this.renderTags()}
 				</CardText>
 				{this.renderCardActions()}
 			</Card>

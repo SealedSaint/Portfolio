@@ -61,7 +61,8 @@ class App extends Component {
 		    height: '100%',
 		    overflowY: 'scroll',
 		    fontFamily: 'Roboto, sans-serif',
-		    background: '#fdfdfd'
+		    background: '#fdfdfd',
+		    paddingBottom: '30px'
 	    }
     }
 }

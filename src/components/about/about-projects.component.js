@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { RaisedButton } from 'material-ui'
 
 import * as actions from '../../actions'
+import aboutStyles from './styles'
 
 class AboutProjects extends Component {
 	static contextTypes = {
@@ -25,26 +26,22 @@ class AboutProjects extends Component {
 	render() {
 		return (
 			<div>
-				<div style={this.styles.header}>
+				<div style={this.styles.sectionHeader}>
 					My Projects
 				</div>
 				<div>
-					{this.renderProjectButtons.apply(this)}
+					{this.renderProjectButtons()}
 				</div>
 			</div>
 		)
 	}
 
-	styles = {
-		header: {
-			fontSize: '30px',
-			padding: '10px 0px'
-		},
+	styles = Object.assign({}, aboutStyles, {
 		buttonContainer: {
 			display: 'inline-block',
 			padding: '0px 15px'
 		}
-	}
+	})
 }
 
 export default connect(null, actions)(AboutProjects)
