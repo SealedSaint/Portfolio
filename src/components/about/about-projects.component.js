@@ -37,6 +37,10 @@ class AboutProjects extends Component {
 					My Projects
 				</div>
 				<div>
+					This site showcases my past projects and current abilities. Most of my experience
+					lies in two main sectors: web development and artificial intelligence.
+				</div>
+				<div>
 					{this.renderProjectButtons()}
 				</div>
 			</div>
