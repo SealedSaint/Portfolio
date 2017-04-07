@@ -25698,7 +25698,6 @@ var App = function (_Component) {
 				left: '0px',
 				width: '100%',
 				height: '100%',
-				overflowY: 'scroll',
 				fontFamily: 'Roboto, sans-serif',
 				background: '#fdfdfd'
 			}
