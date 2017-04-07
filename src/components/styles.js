@@ -1,4 +1,7 @@
 export default {
+	buttonListButton: {
+		marginRight: '15px'
+	},
 	paragraphSpacer: {
 		margin: '10px 0px'
 	},

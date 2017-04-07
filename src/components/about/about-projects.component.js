@@ -16,9 +16,16 @@ class AboutProjects extends Component {
 	}
 
 	renderProjectButtons() {
-		return ['Web', 'AI'].map(label =>
-			<div key={label} style={this.styles.buttonContainer}>
-				<RaisedButton label={label} primary={true} onTouchTap={() => this.handleButtonTap(label.toLowerCase())} />
+		return (
+			<div>
+				{['Web', 'AI'].map(label => (
+					<RaisedButton
+						key={label}
+						label={label}
+						primary={true}
+						style={this.styles.buttonListButton}
+						onTouchTap={() => this.handleButtonTap(label.toLowerCase())} />
+				))}
 			</div>
 		)
 	}
@@ -36,12 +43,7 @@ class AboutProjects extends Component {
 		)
 	}
 
-	styles = Object.assign({}, aboutStyles, {
-		buttonContainer: {
-			display: 'inline-block',
-			padding: '0px 15px'
-		}
-	})
+	styles = Object.assign({}, aboutStyles)
 }
 
 export default connect(null, actions)(AboutProjects)

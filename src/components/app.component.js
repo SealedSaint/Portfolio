@@ -5,6 +5,7 @@ import { Tabs, Tab } from 'material-ui'
 
 import { About } from './about'
 import AI from './ai.component'
+import Footer from './footer.component'
 import Web from './web-dev.component'
 import * as actions from '../actions/index'
 
@@ -48,6 +49,7 @@ class App extends Component {
 					)} />
 					<Redirect to="/about" />
 				</Switch>
+	            <Footer />
             </div>
         )
     }
@@ -61,8 +63,7 @@ class App extends Component {
 		    height: '100%',
 		    overflowY: 'scroll',
 		    fontFamily: 'Roboto, sans-serif',
-		    background: '#fdfdfd',
-		    paddingBottom: '30px'
+		    background: '#fdfdfd'
 	    }
     }
 }
