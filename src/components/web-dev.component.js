@@ -42,7 +42,7 @@ export default class WebDev extends Component {
 					You're looking at it. This site itself is an example of my work!
 				</div>
 			),
-			tags: ['Javascript', 'React', 'Redux', 'HTML', 'CSS']
+			tags: ['Javascript', 'React', 'Redux', 'Webpack', 'HTML', 'CSS']
 		},
 		{
 			title: 'PunchClock',
@@ -85,7 +85,7 @@ export default class WebDev extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/EventTracker Types.png`,
-			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
 		},
 		{
 			title: 'Liquor Balance',
@@ -113,7 +113,7 @@ export default class WebDev extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/Liquor Balance.png`,
-			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
 		},
 		{
 			title: 'MEL Transfers',
@@ -131,7 +131,7 @@ export default class WebDev extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/MEL Transfers.png`,
-			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
 		},
 		{
 			title: 'Barge Unloads',
@@ -158,7 +158,7 @@ export default class WebDev extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/Barge Unloads.png`,
-			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'HTML', 'CSS']
+			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
 		}
 	]
 }
