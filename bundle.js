@@ -25107,6 +25107,11 @@ var AboutProjects = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					null,
+					'This site showcases my past projects and current abilities. Most of my experience lies in two main sectors: web development and artificial intelligence.'
+				),
+				_react2.default.createElement(
+					'div',
+					null,
 					this.renderProjectButtons()
 				)
 			);
@@ -25281,6 +25286,9 @@ var About = exports.About = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = About.__proto__ || Object.getPrototypeOf(About)).call.apply(_ref, [this].concat(args))), _this), _this.styles = Object.assign({}, _styles2.default, {
+			about: {
+				textAlign: 'center'
+			},
 			imagesContainer: {
 				position: 'relative'
 			},
@@ -25304,7 +25312,7 @@ var About = exports.About = function (_Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ style: this.styles.about },
 				_react2.default.createElement(
 					'div',
 					{ style: this.styles.imagesContainer },
@@ -25315,103 +25323,6 @@ var About = exports.About = function (_Component) {
 					'div',
 					{ style: this.styles.textSection },
 					_react2.default.createElement(_aboutSocialMedia2.default, null),
-					_react2.default.createElement(
-						'div',
-						null,
-						_react2.default.createElement(
-							'div',
-							{ style: this.styles.sectionHeader },
-							'The Mission'
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-								'div',
-								null,
-								'I hate labels. Instead of categorizing myself by job title, let me just tell you about my mission. I think that\'s more important.'
-							),
-							_react2.default.createElement(
-								'div',
-								{ style: this.styles.emphasizedText },
-								'Bring Heaven to Earth'
-							),
-							_react2.default.createElement(
-								'div',
-								null,
-								'Every human on Earth is stuck between two facts:'
-							),
-							_react2.default.createElement(
-								'div',
-								null,
-								_react2.default.createElement(
-									'ol',
-									null,
-									_react2.default.createElement(
-										'li',
-										null,
-										'Sometimes the world is an amazingly wonderful place.'
-									),
-									_react2.default.createElement(
-										'li',
-										null,
-										'Sometimes the world really sucks.'
-									)
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								null,
-								'My goal is to reduce world-suck, to bring Heaven to Earth in every way as quickly as possible.'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						null,
-						_react2.default.createElement(
-							'div',
-							{ style: this.styles.sectionHeader },
-							'How it Happens'
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							'It happens step by step, but not all steps are equal. Steps have a magnitude and a direction. I want to take big steps in the right direction.'
-						),
-						_react2.default.createElement(
-							'div',
-							{ style: this.styles.emphasizedText },
-							'Fix Our Failing Bodies'
-						),
-						_react2.default.createElement(
-							'div',
-							{ style: this.styles.emphasizedText },
-							'Solve Renewable Energy'
-						),
-						_react2.default.createElement(
-							'div',
-							{ style: this.styles.emphasizedText },
-							'Accelerate Growth with General Artificial Intelligence'
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							'I thrive on dreaming big \u2014 that\'s who I am. But I don\'t want my dreams to stay dreams. I want to see them realized.'
-						),
-						_react2.default.createElement('div', { style: this.styles.paragraphSpacer }),
-						_react2.default.createElement(
-							'div',
-							null,
-							'I want to say up-front that my current projects fall WAY short of the goals above. They aren\'t in the same league by any stretch of the imagination. Unfortunately, we aren\'t born with the ability to take big steps. It\'s my imperative goal to grow and learn every day so I can begin to take big steps as soon as possible.'
-						),
-						_react2.default.createElement('div', { style: this.styles.paragraphSpacer }),
-						_react2.default.createElement(
-							'div',
-							null,
-							'My projects listed on this site represent bodies of work I have completed for various purposes and showcase my current abilities.'
-						)
-					),
 					_react2.default.createElement(_aboutProjects2.default, null)
 				)
 			);
