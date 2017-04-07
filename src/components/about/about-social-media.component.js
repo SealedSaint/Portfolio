@@ -50,10 +50,10 @@ export default class AboutSocialMedia extends Component {
 		{
 			label: 'Twitter',
 			url: 'https://twitter.com/SealedSaint'
-		},
-		{
-			label: 'Facebook',
-			url: 'http://facebook.com/david.clark314'
 		}
+		//{
+		//	label: 'Facebook',
+		//	url: 'http://facebook.com/david.clark314'
+		//}
 	]
 }
