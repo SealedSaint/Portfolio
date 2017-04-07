@@ -7,7 +7,6 @@ import globalStyles from './styles'
 const imageUrlBase = 'src/images/projects'
 
 export default class WebDev extends Component {
-
 	renderProjects() {
 		return this.projects.map(project => (
 			<Showcase key={project.title} {...project}>
