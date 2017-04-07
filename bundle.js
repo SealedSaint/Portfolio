@@ -25343,26 +25343,26 @@ var About = exports.About = function (_Component) {
 							),
 							_react2.default.createElement(
 								'div',
-								{ style: { display: 'inline-block' } },
+								null,
 								_react2.default.createElement(
 									'ol',
-									{ style: { textAlign: 'left' } },
+									null,
 									_react2.default.createElement(
 										'li',
 										null,
-										'The world can be an amazingly wonderful place.'
+										'Sometimes the world is an amazingly wonderful place.'
 									),
 									_react2.default.createElement(
 										'li',
 										null,
-										'The world can be a really terribe place.'
+										'Sometimes the world really sucks.'
 									)
 								)
 							),
 							_react2.default.createElement(
 								'div',
 								null,
-								'Sometimes life sucks. My goal is to reduce world-suck, to bring Heaven to Earth in every way as quickly as possible.'
+								'My goal is to reduce world-suck, to bring Heaven to Earth in every way as quickly as possible.'
 							)
 						)
 					),
@@ -25397,7 +25397,7 @@ var About = exports.About = function (_Component) {
 						_react2.default.createElement(
 							'div',
 							null,
-							'I thrive on dreaming big - that\'s who I am. But I don\'t want my dreams to stay dreams. I want to see them be reality.'
+							'I thrive on dreaming big \u2014 that\'s who I am. But I don\'t want my dreams to stay dreams. I want to see them realized.'
 						),
 						_react2.default.createElement('div', { style: this.styles.paragraphSpacer }),
 						_react2.default.createElement(

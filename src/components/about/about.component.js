@@ -27,15 +27,15 @@ export class About extends Component {
 							<div>
 								Every human on Earth is stuck between two facts:
 							</div>
-							<div style={{ display: 'inline-block' }}>
-								<ol style={{ textAlign: 'left' }}>
-									<li>The world can be an amazingly wonderful place.</li>
-									<li>The world can be a really terribe place.</li>
+							<div>
+								<ol>
+									<li>Sometimes the world is an amazingly wonderful place.</li>
+									<li>Sometimes the world really sucks.</li>
 								</ol>
 							</div>
 							<div>
-								Sometimes life sucks. My goal is to reduce world-suck, to bring Heaven to
-								Earth in every way as quickly as possible.
+								My goal is to reduce world-suck, to bring Heaven to Earth in every way as quickly
+								as possible.
 							</div>
 						</div>
 					</div>
@@ -49,8 +49,8 @@ export class About extends Component {
 						<div style={this.styles.emphasizedText}>Solve Renewable Energy</div>
 						<div style={this.styles.emphasizedText}>Accelerate Growth with General Artificial Intelligence</div>
 						<div>
-							I thrive on dreaming big - that's who I am. But I don't want my dreams to stay dreams.
-							I want to see them be reality.
+							I thrive on dreaming big &mdash; that's who I am. But I don't want my dreams to stay dreams.
+							I want to see them realized.
 						</div>
 						<div style={this.styles.paragraphSpacer} />
 						<div>
