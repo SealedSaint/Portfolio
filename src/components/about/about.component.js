@@ -20,7 +20,8 @@ export class About extends Component {
 		)
 	}
 
-	styles = Object.assign({}, aboutStyles, {
+	styles = {
+		...aboutStyles,
 		about: {
 			textAlign: 'center'
 		},
@@ -39,5 +40,5 @@ export class About extends Component {
 			border: '4px solid white',
 			borderRadius: '100%'
 		}
-	})
+	}
 }
