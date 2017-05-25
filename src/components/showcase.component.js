@@ -7,6 +7,16 @@ export default class Showcase extends Component {
 		window.location.href = url
 	}
 
+	renderMedia() {
+		if(this.props.videoUrl) {
+			return (
+				<iframe src={this.props.videoUrl} width="560" height="315" allowFullScreen></iframe>
+			)
+		}
+
+		return <img src={this.props.imageUrl} />
+	}
+
 	renderTags() {
 		if(!this.props.tags) return
 
@@ -37,7 +47,7 @@ export default class Showcase extends Component {
 		return (
 			<Card style={this.styles.card}>
 				<CardMedia>
-					<img src={this.props.imageUrl} />
+					{this.renderMedia()}
 				</CardMedia>
 				<CardTitle title={this.props.title} />
 				<CardText>

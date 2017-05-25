@@ -33,6 +33,78 @@ export default class AI extends Component {
 
 	projects = [
 		{
+			title: 'Vehicle Detection Using Cameras for Self-Driving Cars',
+			description: (
+				<div>
+					<div>
+						This project involves creating a pipeline to detect other vehicles on the road in
+						images taken from a vehicle’s dash-cam.
+					</div>
+				</div>
+			),
+			imageUrl: `${imageUrlBase}/Vehicle Detection.jpg`,
+			videoUrl: 'https://www.youtube.com/embed/cFNJqk6LXj4',
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/CarND-Term1-P5'
+				},
+				{
+					label: 'Medium',
+					url: 'https://medium.com/@SealedSaint/vehicle-detection-using-cameras-for-self-driving-cars-db806dcccf65'
+				}
+			],
+			tags: ['Python', 'Numpy', 'OpenCV', 'Sklearn', 'Matplotlib']
+		},
+		{
+			title: 'Advanced Lane-Detection for Self-Driving Cars',
+			description: (
+				<div>
+					<div>
+						This project involves using computer vision and machine learning techniques to identify road
+						lanes and lane features from a vehicle’s dash-cam.
+					</div>
+				</div>
+			),
+			imageUrl: `${imageUrlBase}/Advanced Lane Detection.jpg`,
+			videoUrl: 'https://www.youtube.com/embed/v_leQokpNnU',
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/CarND-Term1-P4'
+				},
+				{
+					label: 'Medium',
+					url: 'https://medium.com/@SealedSaint/advanced-lane-detection-for-self-driving-cars-9579e1f057ef'
+				}
+			],
+			tags: ['Python', 'Numpy', 'OpenCV', 'Matplotlib']
+		},
+		{
+			title: 'End-to-End Self-Driving Car Using Behavioral Cloning',
+			description: (
+				<div>
+					<div>
+						This project involves using behavioral cloning and deep neural networks to teach a car to
+						drive in a simulator.
+					</div>
+				</div>
+			),
+			imageUrl: `${imageUrlBase}/Behavioral Cloning.jpg`,
+			videoUrl: 'https://www.youtube.com/embed/PDKGSf-vhVE',
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/CarND-Term1-P3'
+				},
+				{
+					label: 'Medium',
+					url: 'https://becominghuman.ai/end-to-end-self-driving-car-using-behavioral-cloning-5cad2610522c'
+				}
+			],
+			tags: ['Python', 'Keras', 'Numpy', 'OpenCV', 'Sklearn', 'AWS']
+		},
+		{
 			title: 'Classifying Traffic Signs',
 			description: (
 				<div>
@@ -83,6 +155,7 @@ export default class AI extends Component {
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/LaneLineDetection.png`,
+			videoUrl: 'https://www.youtube.com/embed/cVO101qcXuY',
 			links: [
 				{
 					label: 'GitHub',
