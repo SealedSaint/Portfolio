@@ -14843,6 +14843,15 @@ var Showcase = function (_Component) {
 			window.location.href = url;
 		}
 	}, {
+		key: 'renderMedia',
+		value: function renderMedia() {
+			if (this.props.videoUrl) {
+				return _react2.default.createElement('iframe', { src: this.props.videoUrl, width: '560', height: '315', allowFullScreen: true });
+			}
+
+			return _react2.default.createElement('img', { src: this.props.imageUrl });
+		}
+	}, {
 		key: 'renderTags',
 		value: function renderTags() {
 			if (!this.props.tags) return;
@@ -14884,7 +14893,7 @@ var Showcase = function (_Component) {
 				_react2.default.createElement(
 					_Card.CardMedia,
 					null,
-					_react2.default.createElement('img', { src: this.props.imageUrl })
+					this.renderMedia()
 				),
 				_react2.default.createElement(_Card.CardTitle, { title: this.props.title }),
 				_react2.default.createElement(
@@ -25413,6 +25422,69 @@ var AI = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AI.__proto__ || Object.getPrototypeOf(AI)).call.apply(_ref, [this].concat(args))), _this), _this.styles = Object.assign({}, _styles2.default), _this.projects = [{
+			title: 'Vehicle Detection Using Cameras for Self-Driving Cars',
+			description: _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'div',
+					null,
+					'This project involves creating a pipeline to detect other vehicles on the road in images taken from a vehicle\u2019s dash-cam.'
+				)
+			),
+			imageUrl: imageUrlBase + '/Vehicle Detection.jpg',
+			videoUrl: 'https://www.youtube.com/embed/cFNJqk6LXj4',
+			links: [{
+				label: 'GitHub',
+				url: 'https://github.com/SealedSaint/CarND-Term1-P5'
+			}, {
+				label: 'Medium',
+				url: 'https://medium.com/@SealedSaint/vehicle-detection-using-cameras-for-self-driving-cars-db806dcccf65'
+			}],
+			tags: ['Python', 'Numpy', 'OpenCV', 'Sklearn', 'Matplotlib']
+		}, {
+			title: 'Advanced Lane-Detection for Self-Driving Cars',
+			description: _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'div',
+					null,
+					'This project involves using computer vision and machine learning techniques to identify road lanes and lane features from a vehicle\u2019s dash-cam.'
+				)
+			),
+			imageUrl: imageUrlBase + '/Advanced Lane Detection.jpg',
+			videoUrl: 'https://www.youtube.com/embed/v_leQokpNnU',
+			links: [{
+				label: 'GitHub',
+				url: 'https://github.com/SealedSaint/CarND-Term1-P4'
+			}, {
+				label: 'Medium',
+				url: 'https://medium.com/@SealedSaint/advanced-lane-detection-for-self-driving-cars-9579e1f057ef'
+			}],
+			tags: ['Python', 'Numpy', 'OpenCV', 'Matplotlib']
+		}, {
+			title: 'End-to-End Self-Driving Car Using Behavioral Cloning',
+			description: _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'div',
+					null,
+					'This project involves using behavioral cloning and deep neural networks to teach a car to drive in a simulator.'
+				)
+			),
+			imageUrl: imageUrlBase + '/Behavioral Cloning.jpg',
+			videoUrl: 'https://www.youtube.com/embed/PDKGSf-vhVE',
+			links: [{
+				label: 'GitHub',
+				url: 'https://github.com/SealedSaint/CarND-Term1-P3'
+			}, {
+				label: 'Medium',
+				url: 'https://becominghuman.ai/end-to-end-self-driving-car-using-behavioral-cloning-5cad2610522c'
+			}],
+			tags: ['Python', 'Keras', 'Numpy', 'OpenCV', 'Sklearn', 'AWS']
+		}, {
 			title: 'Classifying Traffic Signs',
 			description: _react2.default.createElement(
 				'div',
@@ -25462,6 +25534,7 @@ var AI = function (_Component) {
 				)
 			),
 			imageUrl: imageUrlBase + '/LaneLineDetection.png',
+			videoUrl: 'https://www.youtube.com/embed/cVO101qcXuY',
 			links: [{
 				label: 'GitHub',
 				url: 'https://github.com/SealedSaint/CarND-Term1-P1'
