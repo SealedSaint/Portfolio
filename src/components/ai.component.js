@@ -21,7 +21,7 @@ export default class AI extends Component {
 				<PageTitle title="Artificial Intelligence">
 					<div style={this.styles.textSection}>
 						Artificial Intelligence is a new frontier for me. I love the possibilities. Below are some
-						exmaples of my AI projects.
+						examples of my AI projects.
 					</div>
 				</PageTitle>
 				{this.renderProjects()}

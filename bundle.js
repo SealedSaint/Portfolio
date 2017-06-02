@@ -25592,7 +25592,7 @@ var AI = function (_Component) {
 					_react2.default.createElement(
 						'div',
 						{ style: this.styles.textSection },
-						'Artificial Intelligence is a new frontier for me. I love the possibilities. Below are some exmaples of my AI projects.'
+						'Artificial Intelligence is a new frontier for me. I love the possibilities. Below are some examples of my AI projects.'
 					)
 				),
 				this.renderProjects()
@@ -25838,7 +25838,7 @@ var Footer = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					null,
-					'Site created by David Clark and last updated April, 2017.'
+					'Site created by David Clark and last updated June, 2017.'
 				)
 			);
 		}
