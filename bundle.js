@@ -25327,8 +25327,8 @@ var About = exports.About = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ style: this.styles.imagesContainer },
-					_react2.default.createElement('img', { src: 'src/images/Cover Pic Yosemite.jpg', style: this.styles.coverImage }),
-					_react2.default.createElement('img', { src: 'src/images/Profile Pic Great Wall.jpg', style: this.styles.profilePic })
+					_react2.default.createElement('img', { src: 'src/images/Cover Pic Yosemite Small.jpg', style: this.styles.coverImage }),
+					_react2.default.createElement('img', { src: 'src/images/Profile Pic Great Wall Small.jpg', style: this.styles.profilePic })
 				),
 				_react2.default.createElement(
 					'div',
@@ -25929,11 +25929,13 @@ var WebDev = function (_Component) {
 					'PunchClock is built with Angular 1.5 in Electron and has desktop builds for Mac, Windows, and Linux.'
 				)
 			),
-			imageUrl: imageUrlBase + '/PunchClock.png',
-			links: [{
-				label: 'GitHub',
-				url: 'https://github.com/SealedSaint/PunchClock-Desktop'
-			}],
+			imageUrl: imageUrlBase + '/PunchClock-New.png',
+			links: [
+				// {
+				// 	label: 'GitHub',
+				// 	url: 'https://github.com/SealedSaint/PunchClock-Desktop'
+				// }
+			],
 			tags: ['Javascript', 'Angular', 'Electron', 'HTML', 'CSS']
 		}, {
 			title: 'EventTracker',
