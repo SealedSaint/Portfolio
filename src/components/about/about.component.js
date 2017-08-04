@@ -9,8 +9,8 @@ export class About extends Component {
 		return (
 			<div style={this.styles.about}>
 				<div style={this.styles.imagesContainer}>
-					<img src="src/images/Cover Pic Yosemite.jpg" style={this.styles.coverImage} />
-					<img src="src/images/Profile Pic Great Wall.jpg" style={this.styles.profilePic} />
+					<img src="src/images/Cover Pic Yosemite Small.jpg" style={this.styles.coverImage} />
+					<img src="src/images/Profile Pic Great Wall Small.jpg" style={this.styles.profilePic} />
 				</div>
 				<div style={this.styles.textSection}>
 					<AboutSocialMedia />
