@@ -58,12 +58,12 @@ export default class WebDev extends Component {
 					</div>
 				</div>
 			),
-			imageUrl: `${imageUrlBase}/PunchClock.png`,
+			imageUrl: `${imageUrlBase}/PunchClock-New.png`,
 			links: [
-				{
-					label: 'GitHub',
-					url: 'https://github.com/SealedSaint/PunchClock-Desktop'
-				}
+				// {
+				// 	label: 'GitHub',
+				// 	url: 'https://github.com/SealedSaint/PunchClock-Desktop'
+				// }
 			],
 			tags: ['Javascript', 'Angular', 'Electron', 'HTML', 'CSS']
 		},
