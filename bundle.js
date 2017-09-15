@@ -25911,7 +25911,11 @@ var WebDev = function (_Component) {
 				null,
 				'You\'re looking at it. This site itself is an example of my work!'
 			),
-			tags: ['Javascript', 'React', 'Redux', 'Webpack', 'HTML', 'CSS']
+			links: [{
+				label: 'GitHub',
+				url: 'https://github.com/SealedSaint/SealedSaint.github.io'
+			}],
+			tags: ['Javascript', 'React+Redux', 'Material-UI', 'Webpack', 'HTML', 'CSS']
 		}, {
 			title: 'PunchClock',
 			description: _react2.default.createElement(
@@ -25920,23 +25924,21 @@ var WebDev = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					null,
-					'PunchClock is an application born out of my frustration with the difficulties of tracking time to different clients throughout the day. I built PunchClock to make it easy to switch your time to various projects. At the end of the day your totals per project are already displayed.'
+					'PunchClock is an application born out of my frustration with the difficulties of tracking time to different activities throughout the day. I built PunchClock to make it easy to switch your time to various projects. At the end of the day your totals per project are already displayed, and you can save those time totals as a TimeLog for future reference.'
 				),
 				_react2.default.createElement('div', { style: _this.styles.paragraphSpacer }),
 				_react2.default.createElement(
 					'div',
 					null,
-					'PunchClock is built with Angular 1.5 in Electron and has desktop builds for Mac, Windows, and Linux.'
+					'PunchClock is a web application available to the public. It\'s in Beta right now and uses browser local storage to save your information. It also works well as a progressive web app on mobile devices. PunchClock 1.0 will feature user profiles with cloud storage shared between devices and the option to unlock the TimeLog features.'
 				)
 			),
 			imageUrl: imageUrlBase + '/PunchClock-New.png',
-			links: [
-				// {
-				// 	label: 'GitHub',
-				// 	url: 'https://github.com/SealedSaint/PunchClock-Desktop'
-				// }
-			],
-			tags: ['Javascript', 'Angular', 'Electron', 'HTML', 'CSS']
+			links: [{
+				label: 'MyPunchClock.com',
+				url: 'https://mypunchclock.com'
+			}],
+			tags: ['Javascript', 'React+Redux', 'React-Bootstrap', 'Material-UI', 'Create-React-App', 'Progressive Web App', 'HTML', 'CSS']
 		}, {
 			title: 'EventTracker',
 			description: _react2.default.createElement(

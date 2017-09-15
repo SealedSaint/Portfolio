@@ -41,7 +41,13 @@ export default class WebDev extends Component {
 					You're looking at it. This site itself is an example of my work!
 				</div>
 			),
-			tags: ['Javascript', 'React', 'Redux', 'Webpack', 'HTML', 'CSS']
+			links: [
+				{
+					label: 'GitHub',
+					url: 'https://github.com/SealedSaint/SealedSaint.github.io'
+				}
+			],
+			tags: ['Javascript', 'React+Redux', 'Material-UI', 'Webpack', 'HTML', 'CSS']
 		},
 		{
 			title: 'PunchClock',
@@ -49,23 +55,26 @@ export default class WebDev extends Component {
 				<div>
 					<div>
 						PunchClock is an application born out of my frustration with the difficulties of tracking
-						time to different clients throughout the day. I built PunchClock to make it easy to switch your time to
-						various projects. At the end of the day your totals per project are already displayed.
+						time to different activities throughout the day. I built PunchClock to make it easy to switch your time to
+						various projects. At the end of the day your totals per project are already displayed, and you can save
+						those time totals as a TimeLog for future reference.
 					</div>
 					<div style={this.styles.paragraphSpacer} />
 					<div>
-						PunchClock is built with Angular 1.5 in Electron and has desktop builds for Mac, Windows, and Linux.
+						PunchClock is a web application available to the public. It's in Beta right now and uses browser local storage
+						to save your information. It also works well as a progressive web app on mobile devices. PunchClock 1.0 will
+						feature user profiles with cloud storage shared between devices and the option to unlock the TimeLog features.
 					</div>
 				</div>
 			),
 			imageUrl: `${imageUrlBase}/PunchClock-New.png`,
 			links: [
-				// {
-				// 	label: 'GitHub',
-				// 	url: 'https://github.com/SealedSaint/PunchClock-Desktop'
-				// }
+				{
+					label: 'MyPunchClock.com',
+					url: 'https://mypunchclock.com'
+				}
 			],
-			tags: ['Javascript', 'Angular', 'Electron', 'HTML', 'CSS']
+			tags: ['Javascript', 'React+Redux', 'React-Bootstrap', 'Material-UI', 'Create-React-App', 'Progressive Web App', 'HTML', 'CSS']
 		},
 		{
 			title: 'EventTracker',
