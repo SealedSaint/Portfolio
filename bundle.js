@@ -25838,7 +25838,7 @@ var Footer = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					null,
-					'Site created by David Clark and last updated June, 2017.'
+					'Site created by David Clark and last updated May, 2018.'
 				)
 			);
 		}
