@@ -9,7 +9,7 @@ export default class Footer extends Component {
 				<div>Think we should work together? Just want to chat?</div>
 				<div>Email me at: davidclark314@gmail.com</div>
 				<div style={this.styles.paragraphSpacer} />
-				<div>Site created by David Clark and last updated May, 2018.</div>
+				<div>Created by David Clark. Last updated June, 2019.</div>
 			</div>
 		)
 	}

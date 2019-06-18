@@ -141,32 +141,5 @@ export default class WebDev extends Component {
 			imageUrl: `${imageUrlBase}/MEL Transfers.png`,
 			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
 		},
-		{
-			title: 'Barge Unloads',
-			description: (
-				<div>
-					<div>
-						Barge Unloads is a web application I developed for Cargill. At one of their sites they
-						regularly unload grain commodities from barges. Cargill wanted more insight into this
-						unloading process:
-						<ol>
-							<li>Which parts of the unload process are slow?</li>
-							<li>Are the current unloads on-time?</li>
-							<li>What are our recent totals?</li>
-						</ol>
-					</div>
-					<div>
-						The Barge Unload application helps answer these questions by:
-						<ol>
-							<li>Displaying unload histories with on-time indications broken down by process sections.</li>
-							<li>Displaying gauges representing the progress of current unloads.</li>
-							<li>Displaying totals for the previous day alongside target values.</li>
-						</ol>
-					</div>
-				</div>
-			),
-			imageUrl: `${imageUrlBase}/Barge Unloads.png`,
-			tags: ['Javascript', 'NodeJS', 'Angular 2', 'OSIsoft PI', 'Gulp', 'HTML', 'CSS']
-		}
 	]
 }
